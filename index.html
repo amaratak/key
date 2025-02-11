@@ -23,7 +23,9 @@
             background-color: rgba(0, 0, 0, 0.8);
             padding: 40px;
             border-radius: 10px;
-            width: 400px;
+            width: 100%;
+            max-width: 400px; /* Ensure it doesn't go beyond 400px */
+            box-sizing: border-box; /* Include padding in width calculation */
         }
 
         .title {
@@ -57,9 +59,9 @@
             font-size: 1.2em;
             letter-spacing: 2px;
             transition: background-color 0.3s ease, transform 0.3s ease;
-            margin-top: 20px;
             display: block;
-            width: 100%;
+            width: 100%; /* Button should not overflow the container */
+            box-sizing: border-box; /* Include padding in width calculation */
         }
 
         .cta-btn:hover {
